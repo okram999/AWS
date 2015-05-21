@@ -14,3 +14,5 @@ end
 service 'nginx' do
   action [:enable, :start]
 end
+
+include_recipe 'chef-client::service'
